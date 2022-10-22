@@ -1,0 +1,59 @@
+"Стэпик обучение, решение задачи по SQLite. Перевод json файла в 2 уровня в таблицу"
+
+create table country (
+country_id text,
+name text,
+path text,
+fullkey text);
+
+insert into country(country_id, name, path, fullkey)
+select json_extract(value, "$.id") as country_id,
+json_extract(value, "$.name") as name,
+path,
+fullkey
+from json_each(readfile("area.json"));
+--------------------------------------------------
+create table area (
+area_id text,
+country_id text,
+name text,
+path text,
+fullkey text);
+
+insert into area(area_id, name, path, fullkey)
+select json_extract(value, "$.id") as area_id,
+json_extract(value, "$.name") as name,
+replace(path,".areas", "") as path,
+replace(fullkey, ".areas", "") as fullkey
+from json_tree(readfile("area.json"))
+where path like "____.areas";
+
+update area
+set
+  country_id = (select country_id from country where country.fullkey = area.path);
+------------------------------------------------------
+create table city (
+city_id text,
+area_id text,
+name text,
+path text,
+fullkey text);
+
+insert into city (city_id, name, path, fullkey)
+select json_extract(value, "$.id") as city_id,
+json_extract(value, "$.name") as name,
+replace(path,".areas", "") as path,
+fullkey
+from json_tree(readfile("area.json"))
+where path like "$[%].areas[%].areas";
+
+
+update city
+set
+  area_id = (select area_id from area where area.fullkey = city.path);
+-------------------------------------------------------------------------------
+Сколько городов в самарской области России?
+
+select COUNT(city.name) from country join area using(country_id)
+			            join city using(area_id)
+where country.name = "Россия" and area.name = 'Самарская область';
