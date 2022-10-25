@@ -1,0 +1,91 @@
+1 Установка и импорт нужных модулей: 
+
+    import random
+    from time import sleep
+    import requests
+    from bs4 import BeautifulSoup
+    import json
+    import csv
+
+2 Создание переменной headers. показать сайту, что мы люди
+    2.1 "Accept": , "User-Agent":
+       
+3 Запрос методом requests.get() страницы с ссылками
+    req = requests.get(url, headers=headers)
+
+4 Проветиь, что ты получили в этом запросе и извлечем текст
+    src = req.text 
+
+5 Сохранение полученных данных в файл HTML, чтобы не делать много высзовов к основной страничке
+
+6 Прочитаем этот файл и сохраним его в переменную
+
+7 Создаем объект супа для этих данных
+    soup = BeautifulSoup(переменная, "lxml")
+
+8 Ищем ссылки/собираем ссылки методом find_all() классу или тэгу
+
+9 Из этого вытаскиваем методом текс название ссылки и методом гет саму ссылку + домен ссылки.
+    for item in all_products_hrefs:
+    item_text = item.text
+    item_href = "https://health-diet.ru" + item.get("href")
+
+10 Складываем это все в словарь 
+    all_categories_dict = {}
+    all_categories_dict[item_text] = item_href
+
+11 Сохранение словаря в json файл
+           with open("all_categories_dict.json", "w") as file:
+          json.dump(all_categories_dict, file, indent=4, ensure_ascii=False)
+
+12 Прочитать файл json обратно
+    with open("all_categories_dict.json") as file:
+    all_categories = json.load(file)
+
+13 Начинаем большую итерацию по двум параметрам название и ключ
+
+14 Через реквест.гет запрашивам данные, извлекаем текс, сохраняем его в файл
+
+15 Файл читаем и делаем из него суп
+
+16 проверяем ссылку на наличие там нужно таблицы
+        alert_block = soup.find(class_="uk-alert-danger")
+        if alert_block is not None:
+            continue
+
+17 Собираем заголовки таблицы
+       
+    table_head = soup.find(class_="mzr-tc-group-table").find("tr").find_all("th")
+    product = table_head[0].text
+    calories = table_head[1].text
+    proteins = table_head[2].text
+    fats = table_head[3].text
+    carbohydrates = table_head[4].text
+
+18 Записываем их в csv
+       with open(f"data/{count}_{category_name}.csv", "w", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(
+            (
+                product,
+                calories,
+                proteins,
+                fats,
+                carbohydrates))
+19 Собираем из того же супа заполнение таблици.
+
+20 Дозаписываем это в тот же файд csv с заголовками не забыть флаг "a"
+
+21 Заносим все  в общий список из словарей и из него стряпаем json файл.
+
+22. Ставим счетки циклов
+
+23 Добавим рандомную итерацию 3 - 5 сек
+
+24 Добавление условия
+
+            def main():
+                # get_data("https://www.tury.ru/hotel/most_luxe.php")
+                get_data_with_selenium("https://www.tury.ru/hotel/most_luxe.php")
+            if __name__ == '__main__':
+                main()

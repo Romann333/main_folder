@@ -1,0 +1,3137 @@
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Visible Connect</title>
+    <meta name="description" content="The easiest way to find investors. We have created one of the most complete databases in the startup world. For founders, by founders.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="/favicon-5fb416611c1e2af65fecd86de478b66d.png">
+
+    
+<meta name="valentine/config/environment" content="%7B%22modulePrefix%22%3A%22valentine%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22valentine%22%2C%22version%22%3A%220.0.0%2Be37a1223%22%7D%2C%22metricsAdapters%22%3A%5B%7B%22name%22%3A%22GoogleTagManager%22%2C%22environments%22%3A%5B%22development%22%2C%22production%22%5D%2C%22config%22%3A%7B%22id%22%3A%22GTM-MTT75KJ%22%2C%22debug%22%3Afalse%2C%22sendHitTask%22%3Atrue%7D%7D%5D%2C%22ember-component-css%22%3A%7B%22namespacing%22%3Afalse%2C%22terseClassNames%22%3Atrue%7D%2C%22API_HOST%22%3A%22https%3A%2F%2Fproject-valentine-api.herokuapp.com%22%2C%22IMAGE_S3_BUCKET%22%3A%22project-valentine%22%2C%22IMAGE_HANDLER_CDN%22%3A%22https%3A%2F%2Fd31s0k9giryrah.cloudfront.net%22%2C%22VISIBLE_URL%22%3A%22https%3A%2F%2Fapp.visible.vc%22%2C%22%40sentry%2Fember%22%3A%7B%22disablePerformance%22%3Atrue%2C%22disableInstrumentComponents%22%3Atrue%2C%22sentry%22%3A%7B%22dsn%22%3A%22https%3A%2F%2F2b46696ec5b9439d90d87b1e3af1af23%40o469641.ingest.sentry.io%2F5499434%22%2C%22tracesSampleRate%22%3A0%2C%22maxBreadcrumbs%22%3A10%2C%22environment%22%3A%22production%22%7D%7D%2C%22ember-cli-mirage%22%3A%7B%22usingProxy%22%3Afalse%2C%22useDefaultPassthroughs%22%3Atrue%7D%2C%22exportApplicationGlobal%22%3Afalse%2C%22ember-load%22%3A%7B%22loadingIndicatorClass%22%3A%22ember-load-indicator%22%7D%7D">
+
+    <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
+    <link integrity="" rel="stylesheet" href="/assets/valentine-4143d7c761a682d41985d3b091b1fb69.css">
+
+    <style>
+      .ember-load-indicator {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+    </style>
+
+    
+
+    <link rel="stylesheet" href="https://cloud.typography.com/6391914/7704412/css/fonts.css" media="print" onload="this.media='all'">
+  </head>
+  <body class="leading-normal text-gray-900 ember-application">
+    
+
+    
+
+    <script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-57FKE17Q4H&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-MTT75KJ"></script><script src="/assets/vendor-2aa81963a3d6d2aac3b50bccb45332c5.js" integrity="sha256-MSBPxU2zh453kvuKkqQwT4NZNO3qTkY4bB7qtxWhJQw= sha512-bkp4lPYmau8uDhyrp6m9tdoriWBCM0t6TAtZ3uJ++zZACepQzBJyS8u/ylT4XqCEEq6kAzr+Rim9NGIRddwx3Q=="></script>
+    <script src="/assets/valentine-0f70ba4402165e52165ec7bdda57b108.js" integrity="sha256-0CuXluEtU491C0Cfh7C4OcnxPL/ssyRR00aL4IDMbUk= sha512-wq2ReRa9g84R2ImcyC7ZrVfYm8NXTPWKUTwDzQe8q0L4Z7xI+ML+4KBJQAlCjB6PwnJnLL6UZbU9p/rZLE4JMw=="></script>
+
+    
+  
+
+
+
+<div class="flex flex-col min-h-screen">
+  <div class="flex-grow bg-gray-100">
+  <header class="flex items-center h-16 bg-white shadow justify-between pr-2 md:pr-4 fixed w-full z-10">
+  <div class="flex-shrink-0 px-2 md:px-6 md:w-62">
+    <a href="/" id="ember4" class="ember-view">
+      <svg viewBox="0 0 445 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden h-6 align-middle md:inline-block"><path fill-rule="evenodd" clip-rule="evenodd" d="M77.235 66.225L39 0H0l57.735 100 19.5-33.775z" fill="currentColor" fill-opacity=".75"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M39 0l38.235 66.225 19-32.91L77 0h38.47H39z" fill="currentColor" fill-opacity=".4"></path><path d="M96.235 33.316L77 0h38.47L96.235 33.316z" fill="currentColor" fill-opacity=".2"></path><path d="M158.597 75l21.263-49.185h-8.492l-12.5 30.503-12.635-30.503h-8.9L158.597 75zm41.96-49.185V73.37h8.152V25.815h-8.152zm54.507 34.85c0 1.088-.272 1.97-.747 2.718-.476.747-1.087 1.359-1.834 1.766a8.553 8.553 0 01-2.582 1.02c-.951.203-1.834.271-2.785.271-1.495 0-2.786-.204-3.941-.611-1.222-.408-2.241-1.02-3.192-1.699-.952-.679-1.835-1.426-2.582-2.242-.747-.815-1.359-1.698-1.902-2.581l-6.114 5.163c.747 1.223 1.698 2.378 2.785 3.533a15.603 15.603 0 003.804 3.125 19.398 19.398 0 004.96 2.242c1.834.543 3.872.815 6.182.815 2.174 0 4.212-.272 6.182-.815 1.902-.544 3.668-1.427 5.163-2.582 1.494-1.087 2.649-2.514 3.532-4.28.884-1.698 1.359-3.668 1.359-5.978 0-2.038-.408-3.804-1.087-5.3-.747-1.494-1.698-2.784-2.921-3.871-1.223-1.087-2.65-1.97-4.28-2.786a56.287 56.287 0 00-5.027-2.241l-3.737-1.427a18.901 18.901 0 01-3.328-1.495c-.951-.543-1.767-1.222-2.31-2.038-.612-.747-.883-1.698-.883-2.785 0-1.698.679-3.125 2.038-4.212 1.358-1.087 3.125-1.63 5.163-1.63 1.087 0 2.106.203 3.057.475.951.34 1.834.747 2.717 1.223.815.543 1.631 1.087 2.31 1.698.679.68 1.291 1.291 1.834 1.97l5.639-5.57a48.509 48.509 0 00-2.65-2.65 22.457 22.457 0 00-3.464-2.445c-1.359-.68-2.786-1.291-4.348-1.767-1.631-.407-3.329-.679-5.163-.679-2.378 0-4.484.408-6.386 1.155-1.902.815-3.533 1.834-4.891 3.057a12.917 12.917 0 00-3.057 4.416 12.89 12.89 0 00-1.087 5.23c0 2.175.407 4.009 1.358 5.503a14.204 14.204 0 003.465 4.077c1.427 1.154 3.057 2.105 4.823 2.92 1.767.816 3.465 1.563 5.231 2.175 1.223.475 2.378.95 3.465 1.358 1.087.408 1.97.883 2.785 1.427.748.543 1.359 1.155 1.767 1.834a4.95 4.95 0 01.679 2.514zm28.821-34.85V73.37h8.152V25.815h-8.152zm43.871 19.43h-6.997V33.56h6.997c2.038 0 3.736.475 5.095 1.359 1.359.95 2.038 2.445 2.038 4.619 0 2.038-.679 3.533-1.902 4.416-1.223.883-2.989 1.29-5.231 1.29zm1.698 20.38h-8.695V52.989h8.695c2.242 0 4.144.544 5.639 1.495 1.495.95 2.242 2.581 2.242 4.823 0 2.31-.747 3.94-2.242 4.891-1.495.951-3.397 1.427-5.639 1.427zm-16.847-39.81V73.37h17.119c2.174 0 4.28-.34 6.25-1.019 1.902-.679 3.601-1.63 5.027-2.853 1.427-1.223 2.582-2.65 3.397-4.416.815-1.766 1.223-3.668 1.223-5.842 0-2.038-.408-3.804-1.087-5.23-.679-1.36-1.495-2.515-2.378-3.398-.883-.815-1.698-1.426-2.513-1.834a38.73 38.73 0 01-1.427-.611c.272-.136.679-.34 1.223-.748.543-.407 1.087-.95 1.63-1.698.544-.68 1.087-1.63 1.495-2.785.407-1.087.611-2.514.611-4.144 0-2.242-.475-4.212-1.29-5.843-.884-1.63-2.039-2.92-3.397-4.008-1.427-1.087-3.057-1.834-4.824-2.378-1.834-.475-3.736-.747-5.638-.747h-15.421zm53.657 0V73.37h28.397v-7.744h-20.244v-39.81h-8.153zm57.045 19.294v-11.55h20.653v-7.744h-28.805V73.37h29.212v-7.745h-21.06V52.853h19.022V45.11h-19.022z" fill="currentColor"></path></svg>
+      <svg fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="h-6 align-middle md:hidden"><path fill-rule="evenodd" clip-rule="evenodd" d="M21.404 20.353L10.808 2H0l16 27.713 5.404-9.36z" fill="#202020" fill-opacity=".75"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M21.339 2l5.33 9.233L32 2 21.405 20.353 10.808 2h10.53z" fill="#000" fill-opacity=".4"></path><path d="M26.67 11.233L21.34 2H32l-5.33 9.233z" fill="#000" fill-opacity=".2"></path></svg>
+    </a>
+  </div>
+  <div class="w-full md:max-w-screen-lg py-3 md:px-6">
+    <div class="relative md:w-3/5">
+  <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+    <svg viewBox="0 0 50 50" fill="currentColor" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 text-gray-500"><path d="M51.704 51.273L36.845 35.82c3.79-3.801 6.138-9.041 6.138-14.82 0-11.58-9.42-21-21-21s-21 9.42-21 21 9.42 21 21 21c5.083 0 9.748-1.817 13.384-4.832l14.895 15.491a.998.998 0 001.414.028 1 1 0 00.028-1.414zM21.983 40c-10.477 0-19-8.523-19-19s8.523-19 19-19 19 8.523 19 19-8.524 19-19 19z"></path></svg>
+  </div>
+  <input class="block w-full h-10 pl-10 placeholder-gray-500 border rounded-md shadow-sm focus:outline-none" placeholder="Search" type="text">
+</div>
+  </div>
+
+  
+    <div class="px-4 md:hidden">
+      <button class="flex items-center" title="Show filters" type="button">
+        <!---->
+        <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" class="w-5 h-5 ml-1 text-gray-500"><path d="M1.125 5.143c0-.355.32-.643.716-.643h14.318c.395 0 .716.288.716.643 0 .355-.32.643-.716.643H1.841c-.396 0-.716-.288-.716-.643zM2.557 9c0-.355.32-.643.716-.643h11.454c.396 0 .716.288.716.643 0 .355-.32.643-.716.643H3.273c-.396 0-.716-.288-.716-.643zm3.58 3.214c-.396 0-.717.288-.717.643 0 .355.321.643.716.643h5.728c.395 0 .715-.288.715-.643 0-.355-.32-.643-.715-.643H6.136z"></path></svg>
+      </button>
+    </div>
+  
+</header>
+
+  <div class="md:flex">
+    <aside class="fixed inset-0 w-full h-full pb-10 min-h-screen overflow-y-auto bg-gray-800 md:block md:w-62 flex-shrink-0 md:static md:h-auto shadow-sm
+        hidden">
+      <div class="z-20 flex items-center justify-between px-4 pt-20 pb-3 bg-gray-900 border-b border-gray-800">
+  <div class="flex items-center flex-1 text-gray-300">
+    Filters
+    <!---->
+  </div>
+  <button class="text-xs text-gray-200 underline" type="button">
+    Clear all
+  </button>
+  <button class="flex-1 text-xs text-right text-orange-600 underline md:hidden" type="button">
+    Done
+  </button>
+</div>
+
+<div class="p-4 bg-gray-800">
+    <div class="bg-gray-800">
+  <div class="flex items-center">
+    <div class="leading-tight text-gray-300">Stage</div>
+    <!---->
+  </div>
+<!---->  <div class="
+    mt-2
+  ">
+    <div class="space-y-1">
+        <div title="Accelerator">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Accelerator</div>
+          </label>
+        </div>
+        <div title="Pre-Seed">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Pre-Seed</div>
+          </label>
+        </div>
+        <div title="Seed">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Seed</div>
+          </label>
+        </div>
+        <div title="Series A">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Series A</div>
+          </label>
+        </div>
+        <div title="Series B">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Series B</div>
+          </label>
+        </div>
+        <div title="Series C">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Series C</div>
+          </label>
+        </div>
+        <div title="Growth">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Growth</div>
+          </label>
+        </div>
+        <div title="Alt. VC">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Alt. VC</div>
+          </label>
+        </div>
+        <div title="Angel">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Angel</div>
+          </label>
+        </div>
+        <div title="Early Stage">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Early Stage</div>
+          </label>
+        </div>
+        <div title="Startup Studio (Lab)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Startup Studio (Lab)</div>
+          </label>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <hr class="mt-5 -mx-4 border-gray-700">
+
+    <div class="w-4/5 mt-4 md:w-full bg-gray-800">
+  <div class="flex items-center">
+    <div class="leading-tight text-gray-300">Focus</div>
+    <!---->
+  </div>
+    <div class="mt-2">
+      <input placeholder="Search focus" class="w-full px-2 py-1 text-sm placeholder-gray-500 border rounded focus:outline-none" type="text">
+    </div>
+  <div class="
+    h-64 py-3 pl-3 mt-3 overflow-y-auto border border-gray-700 rounded investor-filters__checkboxes
+  ">
+    <div class="space-y-1">
+        <div title=" Climate Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Climate Tech</div>
+          </label>
+        </div>
+        <div title=" Digital Transformation">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Digital Transformation</div>
+          </label>
+        </div>
+        <div title=" Healthtech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Healthtech</div>
+          </label>
+        </div>
+        <div title=" Logistics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Logistics</div>
+          </label>
+        </div>
+        <div title=" Marketplaces">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Marketplaces</div>
+          </label>
+        </div>
+        <div title=" Medical Devices">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Medical Devices</div>
+          </label>
+        </div>
+        <div title=" Mobile">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Mobile</div>
+          </label>
+        </div>
+        <div title=" SME Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> SME Tech</div>
+          </label>
+        </div>
+        <div title=",Consumer Health">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">,Consumer Health</div>
+          </label>
+        </div>
+        <div title="AI">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">AI</div>
+          </label>
+        </div>
+        <div title="API">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">API</div>
+          </label>
+        </div>
+        <div title="API-First Products">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">API-First Products</div>
+          </label>
+        </div>
+        <div title="Advertising">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Advertising</div>
+          </label>
+        </div>
+        <div title="Agnostic">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Agnostic</div>
+          </label>
+        </div>
+        <div title="Agriculture">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Agriculture</div>
+          </label>
+        </div>
+        <div title="Analytics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Analytics</div>
+          </label>
+        </div>
+        <div title="Applications">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Applications</div>
+          </label>
+        </div>
+        <div title="Automation">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Automation</div>
+          </label>
+        </div>
+        <div title="B2B">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2B</div>
+          </label>
+        </div>
+        <div title="B2B &amp; Enterprise">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2B &amp; Enterprise</div>
+          </label>
+        </div>
+        <div title="B2B Commerce">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2B Commerce</div>
+          </label>
+        </div>
+        <div title="B2B SaaS">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2B SaaS</div>
+          </label>
+        </div>
+        <div title="B2B Software">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2B Software</div>
+          </label>
+        </div>
+        <div title="B2B2C">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2B2C</div>
+          </label>
+        </div>
+        <div title="B2C">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">B2C</div>
+          </label>
+        </div>
+        <div title="BNPL">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">BNPL</div>
+          </label>
+        </div>
+        <div title="Big Data">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Big Data</div>
+          </label>
+        </div>
+        <div title="Biopharma">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Biopharma</div>
+          </label>
+        </div>
+        <div title="Biotechnology">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Biotechnology</div>
+          </label>
+        </div>
+        <div title="Blockchain">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Blockchain</div>
+          </label>
+        </div>
+        <div title="CPG">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">CPG</div>
+          </label>
+        </div>
+        <div title="CRM">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">CRM</div>
+          </label>
+        </div>
+        <div title="Cannabis">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cannabis</div>
+          </label>
+        </div>
+        <div title="Care Economy ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Care Economy </div>
+          </label>
+        </div>
+        <div title="Childcare">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Childcare</div>
+          </label>
+        </div>
+        <div title="Cleantech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cleantech</div>
+          </label>
+        </div>
+        <div title="Climate">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Climate</div>
+          </label>
+        </div>
+        <div title="Climate Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Climate Tech</div>
+          </label>
+        </div>
+        <div title="Cloud Infrastructure">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cloud Infrastructure</div>
+          </label>
+        </div>
+        <div title="Collaboration">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Collaboration</div>
+          </label>
+        </div>
+        <div title="Collaboration ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Collaboration </div>
+          </label>
+        </div>
+        <div title="Commerce">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Commerce</div>
+          </label>
+        </div>
+        <div title="Community">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Community</div>
+          </label>
+        </div>
+        <div title="Computer Vision">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Computer Vision</div>
+          </label>
+        </div>
+        <div title="Computing">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Computing</div>
+          </label>
+        </div>
+        <div title="Consumer">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer</div>
+          </label>
+        </div>
+        <div title="Consumer Brands">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Brands</div>
+          </label>
+        </div>
+        <div title="Consumer Electronics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Electronics</div>
+          </label>
+        </div>
+        <div title="Consumer Finance">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Finance</div>
+          </label>
+        </div>
+        <div title="Consumer Fintech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Fintech</div>
+          </label>
+        </div>
+        <div title="Consumer Goods">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Goods</div>
+          </label>
+        </div>
+        <div title="Consumer Health">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Health</div>
+          </label>
+        </div>
+        <div title="Consumer Services">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer Services</div>
+          </label>
+        </div>
+        <div title="Consumer products">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer products</div>
+          </label>
+        </div>
+        <div title="Consumer tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Consumer tech</div>
+          </label>
+        </div>
+        <div title="Content Creators">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Content Creators</div>
+          </label>
+        </div>
+        <div title="Creator Economy">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Creator Economy</div>
+          </label>
+        </div>
+        <div title="Creators">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Creators</div>
+          </label>
+        </div>
+        <div title="Crypto">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Crypto</div>
+          </label>
+        </div>
+        <div title="Cyber Security">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cyber Security</div>
+          </label>
+        </div>
+        <div title="Cyber ​​Security">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cyber ​​Security</div>
+          </label>
+        </div>
+        <div title="Cybersecurity">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cybersecurity</div>
+          </label>
+        </div>
+        <div title="D2C">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">D2C</div>
+          </label>
+        </div>
+        <div title="DEI">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">DEI</div>
+          </label>
+        </div>
+        <div title="DTC">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">DTC</div>
+          </label>
+        </div>
+        <div title="Data Analytics Enterprise Software">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Data Analytics Enterprise Software</div>
+          </label>
+        </div>
+        <div title="Deep Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Deep Tech</div>
+          </label>
+        </div>
+        <div title="Deeptech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Deeptech</div>
+          </label>
+        </div>
+        <div title="Defi">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Defi</div>
+          </label>
+        </div>
+        <div title="Design">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Design</div>
+          </label>
+        </div>
+        <div title="Dev Tools">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Dev Tools</div>
+          </label>
+        </div>
+        <div title="DevOps">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">DevOps</div>
+          </label>
+        </div>
+        <div title="Developer Tools">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Developer Tools</div>
+          </label>
+        </div>
+        <div title="Digital Consumer">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Digital Consumer</div>
+          </label>
+        </div>
+        <div title="Digital Health">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Digital Health</div>
+          </label>
+        </div>
+        <div title="Digital Media">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Digital Media</div>
+          </label>
+        </div>
+        <div title="Digital healthcare">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Digital healthcare</div>
+          </label>
+        </div>
+        <div title="Digitally-enabled Healthcare">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Digitally-enabled Healthcare</div>
+          </label>
+        </div>
+        <div title="Drones">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Drones</div>
+          </label>
+        </div>
+        <div title="E-Commerce">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">E-Commerce</div>
+          </label>
+        </div>
+        <div title="ESG">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">ESG</div>
+          </label>
+        </div>
+        <div title="EdTech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">EdTech</div>
+          </label>
+        </div>
+        <div title="Education">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Education</div>
+          </label>
+        </div>
+        <div title="Energy">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Energy</div>
+          </label>
+        </div>
+        <div title="Enterprise">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Enterprise</div>
+          </label>
+        </div>
+        <div title="Enterprise ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Enterprise </div>
+          </label>
+        </div>
+        <div title="Enterprise Software">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Enterprise Software</div>
+          </label>
+        </div>
+        <div title="Entertainment">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Entertainment</div>
+          </label>
+        </div>
+        <div title="Entertainment &amp; Media">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Entertainment &amp; Media</div>
+          </label>
+        </div>
+        <div title="Fashion">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Fashion</div>
+          </label>
+        </div>
+        <div title="Femtech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Femtech</div>
+          </label>
+        </div>
+        <div title="Finance">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Finance</div>
+          </label>
+        </div>
+        <div title="Financial Services">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Financial Services</div>
+          </label>
+        </div>
+        <div title="Fintech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Fintech</div>
+          </label>
+        </div>
+        <div title="Food &amp; Beverage">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Food &amp; Beverage</div>
+          </label>
+        </div>
+        <div title="Food Delivery">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Food Delivery</div>
+          </label>
+        </div>
+        <div title="Food Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Food Tech</div>
+          </label>
+        </div>
+        <div title="Food and Beverage">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Food and Beverage</div>
+          </label>
+        </div>
+        <div title="Future Work">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Future Work</div>
+          </label>
+        </div>
+        <div title="Future of Play">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Future of Play</div>
+          </label>
+        </div>
+        <div title="Future of Work">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Future of Work</div>
+          </label>
+        </div>
+        <div title="Games">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Games</div>
+          </label>
+        </div>
+        <div title="Gaming">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Gaming</div>
+          </label>
+        </div>
+        <div title="Generalist">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Generalist</div>
+          </label>
+        </div>
+        <div title="Government and Military">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Government and Military</div>
+          </label>
+        </div>
+        <div title="Hardware">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Hardware</div>
+          </label>
+        </div>
+        <div title="Health">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Health</div>
+          </label>
+        </div>
+        <div title="Health &amp; Wellness">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Health &amp; Wellness</div>
+          </label>
+        </div>
+        <div title="Health Care">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Health Care</div>
+          </label>
+        </div>
+        <div title="Health and Wellness">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Health and Wellness</div>
+          </label>
+        </div>
+        <div title="Hospitality">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Hospitality</div>
+          </label>
+        </div>
+        <div title="ISP">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">ISP</div>
+          </label>
+        </div>
+        <div title="IT">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">IT</div>
+          </label>
+        </div>
+        <div title="IT Infrastructure">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">IT Infrastructure</div>
+          </label>
+        </div>
+        <div title="Impact">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Impact</div>
+          </label>
+        </div>
+        <div title="Industrial">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Industrial</div>
+          </label>
+        </div>
+        <div title="Industry Technology">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Industry Technology</div>
+          </label>
+        </div>
+        <div title="Information Technology">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Information Technology</div>
+          </label>
+        </div>
+        <div title="Infrastructure">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Infrastructure</div>
+          </label>
+        </div>
+        <div title="Insurance">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Insurance</div>
+          </label>
+        </div>
+        <div title="Insurance/ Benefits">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Insurance/ Benefits</div>
+          </label>
+        </div>
+        <div title="Insurtech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Insurtech</div>
+          </label>
+        </div>
+        <div title="Internet">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Internet</div>
+          </label>
+        </div>
+        <div title="Internet/Tech-Enabled Services">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Internet/Tech-Enabled Services</div>
+          </label>
+        </div>
+        <div title="IoT">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">IoT</div>
+          </label>
+        </div>
+        <div title="Leadership">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Leadership</div>
+          </label>
+        </div>
+        <div title="Legal Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Legal Tech</div>
+          </label>
+        </div>
+        <div title="Lending and Investments">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Lending and Investments</div>
+          </label>
+        </div>
+        <div title="Life Sciences">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Life Sciences</div>
+          </label>
+        </div>
+        <div title="Lifestyle and Wellness">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Lifestyle and Wellness</div>
+          </label>
+        </div>
+        <div title="Logistics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Logistics</div>
+          </label>
+        </div>
+        <div title="Manufacturing">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Manufacturing</div>
+          </label>
+        </div>
+        <div title="Marketing and Sales">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Marketing and Sales</div>
+          </label>
+        </div>
+        <div title="Marketplaces">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Marketplaces</div>
+          </label>
+        </div>
+        <div title="Media and Entertainment">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Media and Entertainment</div>
+          </label>
+        </div>
+        <div title="Messaging">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Messaging</div>
+          </label>
+        </div>
+        <div title="Messaging and Telecommunications">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Messaging and Telecommunications</div>
+          </label>
+        </div>
+        <div title="Mobile">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Mobile</div>
+          </label>
+        </div>
+        <div title="Mobility">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Mobility</div>
+          </label>
+        </div>
+        <div title="Music">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Music</div>
+          </label>
+        </div>
+        <div title="New Retail">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">New Retail</div>
+          </label>
+        </div>
+        <div title="New Work">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">New Work</div>
+          </label>
+        </div>
+        <div title="No Code">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">No Code</div>
+          </label>
+        </div>
+        <div title="Nutrition">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Nutrition</div>
+          </label>
+        </div>
+        <div title="Payments">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Payments</div>
+          </label>
+        </div>
+        <div title="Pharmaceutical">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Pharmaceutical</div>
+          </label>
+        </div>
+        <div title="Platforms">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Platforms</div>
+          </label>
+        </div>
+        <div title="Platforms &amp; Marketplaces">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Platforms &amp; Marketplaces</div>
+          </label>
+        </div>
+        <div title="Privacy and Security">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Privacy and Security</div>
+          </label>
+        </div>
+        <div title="Productivity">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Productivity</div>
+          </label>
+        </div>
+        <div title="Professional Services Tech ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Professional Services Tech </div>
+          </label>
+        </div>
+        <div title="Prop Tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Prop Tech</div>
+          </label>
+        </div>
+        <div title="Proptech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Proptech</div>
+          </label>
+        </div>
+        <div title="Quantum">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Quantum</div>
+          </label>
+        </div>
+        <div title="Real Estate">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Real Estate</div>
+          </label>
+        </div>
+        <div title="Remote">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Remote</div>
+          </label>
+        </div>
+        <div title="Renewable Energy">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Renewable Energy</div>
+          </label>
+        </div>
+        <div title="Retail">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Retail</div>
+          </label>
+        </div>
+        <div title="Robotics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Robotics</div>
+          </label>
+        </div>
+        <div title="SMB">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">SMB</div>
+          </label>
+        </div>
+        <div title="SME tech">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">SME tech</div>
+          </label>
+        </div>
+        <div title="SaaS">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">SaaS</div>
+          </label>
+        </div>
+        <div title="Sales and Marketing">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Sales and Marketing</div>
+          </label>
+        </div>
+        <div title="Security">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Security</div>
+          </label>
+        </div>
+        <div title="Semiconductor">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Semiconductor</div>
+          </label>
+        </div>
+        <div title="Senior Care">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Senior Care</div>
+          </label>
+        </div>
+        <div title="Social Media">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Social Media</div>
+          </label>
+        </div>
+        <div title="Social commerce">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Social commerce</div>
+          </label>
+        </div>
+        <div title="Software">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Software</div>
+          </label>
+        </div>
+        <div title="Software and Consumer Finance">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Software and Consumer Finance</div>
+          </label>
+        </div>
+        <div title="Space">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Space</div>
+          </label>
+        </div>
+        <div title="Sports">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Sports</div>
+          </label>
+        </div>
+        <div title="Supply Chain">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Supply Chain</div>
+          </label>
+        </div>
+        <div title="Supply Chain Management">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Supply Chain Management</div>
+          </label>
+        </div>
+        <div title="Supply chain &amp; logistics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Supply chain &amp; logistics</div>
+          </label>
+        </div>
+        <div title="Sustainability">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Sustainability</div>
+          </label>
+        </div>
+        <div title="Tech-Enabled Services">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Tech-Enabled Services</div>
+          </label>
+        </div>
+        <div title="Technology ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Technology </div>
+          </label>
+        </div>
+        <div title="Telecom">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Telecom</div>
+          </label>
+        </div>
+        <div title="The Passion Economy">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">The Passion Economy</div>
+          </label>
+        </div>
+        <div title="Trading Platform">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Trading Platform</div>
+          </label>
+        </div>
+        <div title="Transportation">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Transportation</div>
+          </label>
+        </div>
+        <div title="Travel and Tourism">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Travel and Tourism</div>
+          </label>
+        </div>
+        <div title="Underrepresented">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Underrepresented</div>
+          </label>
+        </div>
+        <div title="VR/AR">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">VR/AR</div>
+          </label>
+        </div>
+        <div title="Women's Health">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Women's Health</div>
+          </label>
+        </div>
+        <div title="web3">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">web3</div>
+          </label>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <hr class="mt-5 -mx-4 border-gray-700">
+
+    <div class="w-4/5 mt-4 md:w-full bg-gray-800">
+  <div class="flex items-center">
+    <div class="leading-tight text-gray-300">Investment geography</div>
+    <!---->
+  </div>
+    <div class="mt-2">
+      <input placeholder="Search investment geography" class="w-full px-2 py-1 text-sm placeholder-gray-500 border rounded focus:outline-none" type="text">
+    </div>
+  <div class="
+    h-64 py-3 pl-3 mt-3 overflow-y-auto border border-gray-700 rounded investor-filters__checkboxes
+  ">
+    <div class="space-y-1">
+        <div title="Agnostic (Global)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Agnostic (Global)</div>
+          </label>
+        </div>
+        <div title="United States">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">United States</div>
+          </label>
+        </div>
+        <div title="Europe">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Europe</div>
+          </label>
+        </div>
+        <div title="United Kingdom">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">United Kingdom</div>
+          </label>
+        </div>
+        <div title=" Indonesia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> Indonesia</div>
+          </label>
+        </div>
+        <div title=" South East Asia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300"> South East Asia</div>
+          </label>
+        </div>
+        <div title="APAC">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">APAC</div>
+          </label>
+        </div>
+        <div title="Africa">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Africa</div>
+          </label>
+        </div>
+        <div title="Asia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Asia</div>
+          </label>
+        </div>
+        <div title="Asia-Pacific">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Asia-Pacific</div>
+          </label>
+        </div>
+        <div title="Australia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Australia</div>
+          </label>
+        </div>
+        <div title="Austria">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Austria</div>
+          </label>
+        </div>
+        <div title="Bay Area (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Bay Area (US)</div>
+          </label>
+        </div>
+        <div title="Brazil">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Brazil</div>
+          </label>
+        </div>
+        <div title="Canada">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Canada</div>
+          </label>
+        </div>
+        <div title="China">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">China</div>
+          </label>
+        </div>
+        <div title="DACH">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">DACH</div>
+          </label>
+        </div>
+        <div title="Germany">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Germany</div>
+          </label>
+        </div>
+        <div title="Great Lakes Midwest (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Great Lakes Midwest (US)</div>
+          </label>
+        </div>
+        <div title="Great Plains Midwest (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Great Plains Midwest (US)</div>
+          </label>
+        </div>
+        <div title="Greater New York City (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Greater New York City (US)</div>
+          </label>
+        </div>
+        <div title="Iberian Connection">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Iberian Connection</div>
+          </label>
+        </div>
+        <div title="India">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">India</div>
+          </label>
+        </div>
+        <div title="Israel">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Israel</div>
+          </label>
+        </div>
+        <div title="Italy">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Italy</div>
+          </label>
+        </div>
+        <div title="Japan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Japan</div>
+          </label>
+        </div>
+        <div title="LATAM">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">LATAM</div>
+          </label>
+        </div>
+        <div title="Latin America">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Latin America</div>
+          </label>
+        </div>
+        <div title="Mexico">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Mexico</div>
+          </label>
+        </div>
+        <div title="Middle East">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Middle East</div>
+          </label>
+        </div>
+        <div title="Netherlands">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Netherlands</div>
+          </label>
+        </div>
+        <div title="Nordics">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Nordics</div>
+          </label>
+        </div>
+        <div title="North (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">North (US)</div>
+          </label>
+        </div>
+        <div title="North America">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">North America</div>
+          </label>
+        </div>
+        <div title="North America ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">North America </div>
+          </label>
+        </div>
+        <div title="Northeast (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Northeast (US)</div>
+          </label>
+        </div>
+        <div title="Pacific Northwest (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Pacific Northwest (US)</div>
+          </label>
+        </div>
+        <div title="Rockies (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Rockies (US)</div>
+          </label>
+        </div>
+        <div title="Singapore">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Singapore</div>
+          </label>
+        </div>
+        <div title="South Africa">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">South Africa</div>
+          </label>
+        </div>
+        <div title="South America">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">South America</div>
+          </label>
+        </div>
+        <div title="Southeast (Asia)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Southeast (Asia)</div>
+          </label>
+        </div>
+        <div title="Southeast (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Southeast (US)</div>
+          </label>
+        </div>
+        <div title="Southeast Asia ">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Southeast Asia </div>
+          </label>
+        </div>
+        <div title="Southern California (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Southern California (US)</div>
+          </label>
+        </div>
+        <div title="Southwest (US)">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Southwest (US)</div>
+          </label>
+        </div>
+        <div title="Spain">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Spain</div>
+          </label>
+        </div>
+        <div title="Sub-Saharan Africa">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Sub-Saharan Africa</div>
+          </label>
+        </div>
+        <div title="Switzerland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Switzerland</div>
+          </label>
+        </div>
+        <div title="Turkey">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Turkey</div>
+          </label>
+        </div>
+        <div title="Western Europe">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Western Europe</div>
+          </label>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <hr class="mt-5 -mx-4 border-gray-700">
+
+    <div class="w-4/5 mt-4 md:w-full bg-gray-800">
+  <div class="flex items-center">
+    <div class="leading-tight text-gray-300">Investor country</div>
+    <!---->
+  </div>
+    <div class="mt-2">
+      <input placeholder="Search investor country" class="w-full px-2 py-1 text-sm placeholder-gray-500 border rounded focus:outline-none" type="text">
+    </div>
+  <div class="
+    h-64 py-3 pl-3 mt-3 overflow-y-auto border border-gray-700 rounded investor-filters__checkboxes
+  ">
+    <div class="space-y-1">
+        <div title="United States">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">United States</div>
+          </label>
+        </div>
+        <div title="United Kingdom">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">United Kingdom</div>
+          </label>
+        </div>
+        <div title="Andorra">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Andorra</div>
+          </label>
+        </div>
+        <div title="Argentina">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Argentina</div>
+          </label>
+        </div>
+        <div title="Australia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Australia</div>
+          </label>
+        </div>
+        <div title="Austria">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Austria</div>
+          </label>
+        </div>
+        <div title="Azerbaijan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Azerbaijan</div>
+          </label>
+        </div>
+        <div title="Bahrain">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Bahrain</div>
+          </label>
+        </div>
+        <div title="Bangladesh">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Bangladesh</div>
+          </label>
+        </div>
+        <div title="Belarus">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Belarus</div>
+          </label>
+        </div>
+        <div title="Belgium">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Belgium</div>
+          </label>
+        </div>
+        <div title="Brazil">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Brazil</div>
+          </label>
+        </div>
+        <div title="Bulgaria">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Bulgaria</div>
+          </label>
+        </div>
+        <div title="Canada">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Canada</div>
+          </label>
+        </div>
+        <div title="Cayman Islands">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cayman Islands</div>
+          </label>
+        </div>
+        <div title="Chile">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Chile</div>
+          </label>
+        </div>
+        <div title="China">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">China</div>
+          </label>
+        </div>
+        <div title="Columbia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Columbia</div>
+          </label>
+        </div>
+        <div title="Croatia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Croatia</div>
+          </label>
+        </div>
+        <div title="Cyprus">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Cyprus</div>
+          </label>
+        </div>
+        <div title="Czech Republic">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Czech Republic</div>
+          </label>
+        </div>
+        <div title="Denmark">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Denmark</div>
+          </label>
+        </div>
+        <div title="Egypt">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Egypt</div>
+          </label>
+        </div>
+        <div title="Estonia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Estonia</div>
+          </label>
+        </div>
+        <div title="Finland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Finland</div>
+          </label>
+        </div>
+        <div title="France">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">France</div>
+          </label>
+        </div>
+        <div title="Germany">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Germany</div>
+          </label>
+        </div>
+        <div title="Greece">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Greece</div>
+          </label>
+        </div>
+        <div title="Hong Kong">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Hong Kong</div>
+          </label>
+        </div>
+        <div title="Hungary">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Hungary</div>
+          </label>
+        </div>
+        <div title="Iceland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Iceland</div>
+          </label>
+        </div>
+        <div title="India">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">India</div>
+          </label>
+        </div>
+        <div title="Indonesia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Indonesia</div>
+          </label>
+        </div>
+        <div title="Iran">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Iran</div>
+          </label>
+        </div>
+        <div title="Iraq">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Iraq</div>
+          </label>
+        </div>
+        <div title="Ireland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Ireland</div>
+          </label>
+        </div>
+        <div title="Israel">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Israel</div>
+          </label>
+        </div>
+        <div title="Italy">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Italy</div>
+          </label>
+        </div>
+        <div title="Jamaica">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Jamaica</div>
+          </label>
+        </div>
+        <div title="Japan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Japan</div>
+          </label>
+        </div>
+        <div title="Jordan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Jordan</div>
+          </label>
+        </div>
+        <div title="Kazakhstan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Kazakhstan</div>
+          </label>
+        </div>
+        <div title="Kenya">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Kenya</div>
+          </label>
+        </div>
+        <div title="Kuwait">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Kuwait</div>
+          </label>
+        </div>
+        <div title="Latvia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Latvia</div>
+          </label>
+        </div>
+        <div title="Lebanon">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Lebanon</div>
+          </label>
+        </div>
+        <div title="Lithuania">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Lithuania</div>
+          </label>
+        </div>
+        <div title="Luxembourg">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Luxembourg</div>
+          </label>
+        </div>
+        <div title="Malaysia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Malaysia</div>
+          </label>
+        </div>
+        <div title="Mauritius">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Mauritius</div>
+          </label>
+        </div>
+        <div title="Mexico">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Mexico</div>
+          </label>
+        </div>
+        <div title="Netherlands">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Netherlands</div>
+          </label>
+        </div>
+        <div title="New Zealand">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">New Zealand</div>
+          </label>
+        </div>
+        <div title="Nigeria">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Nigeria</div>
+          </label>
+        </div>
+        <div title="Northern Ireland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Northern Ireland</div>
+          </label>
+        </div>
+        <div title="Norway">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Norway</div>
+          </label>
+        </div>
+        <div title="Oman">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Oman</div>
+          </label>
+        </div>
+        <div title="Pakistan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Pakistan</div>
+          </label>
+        </div>
+        <div title="Peru">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Peru</div>
+          </label>
+        </div>
+        <div title="Philippines">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Philippines</div>
+          </label>
+        </div>
+        <div title="Poland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Poland</div>
+          </label>
+        </div>
+        <div title="Portugal">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Portugal</div>
+          </label>
+        </div>
+        <div title="Puerto Rico">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Puerto Rico</div>
+          </label>
+        </div>
+        <div title="Romania">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Romania</div>
+          </label>
+        </div>
+        <div title="Russia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Russia</div>
+          </label>
+        </div>
+        <div title="Saudi Arabi">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Saudi Arabi</div>
+          </label>
+        </div>
+        <div title="Saudi Arabia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Saudi Arabia</div>
+          </label>
+        </div>
+        <div title="Scotland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Scotland</div>
+          </label>
+        </div>
+        <div title="Singapore">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Singapore</div>
+          </label>
+        </div>
+        <div title="Slovakia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Slovakia</div>
+          </label>
+        </div>
+        <div title="Slovenia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Slovenia</div>
+          </label>
+        </div>
+        <div title="South Africa">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">South Africa</div>
+          </label>
+        </div>
+        <div title="South Korea">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">South Korea</div>
+          </label>
+        </div>
+        <div title="Spain">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Spain</div>
+          </label>
+        </div>
+        <div title="Sri Lanka">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Sri Lanka</div>
+          </label>
+        </div>
+        <div title="Sweden">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Sweden</div>
+          </label>
+        </div>
+        <div title="Switzerland">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Switzerland</div>
+          </label>
+        </div>
+        <div title="Taiwan">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Taiwan</div>
+          </label>
+        </div>
+        <div title="Thailand">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Thailand</div>
+          </label>
+        </div>
+        <div title="Tunisia">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Tunisia</div>
+          </label>
+        </div>
+        <div title="Turkey">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Turkey</div>
+          </label>
+        </div>
+        <div title="Ukraine">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Ukraine</div>
+          </label>
+        </div>
+        <div title="United Arab Emirates">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">United Arab Emirates</div>
+          </label>
+        </div>
+        <div title="Vietnam">
+          <label class="flex items-center cursor-pointer">
+            <input class="flex-shrink-0" type="checkbox">
+            <div class="ml-2 truncate text-sm text-gray-300">Vietnam</div>
+          </label>
+        </div>
+    </div>
+  </div>
+</div>
+
+    <hr class="mt-5 -mx-4 border-gray-700">
+
+    <div class="mt-4">
+  <div class="text-white">Check size (USD)</div>
+  <div class="flex flex-wrap mt-2">
+    <div>
+      <label class="text-xs text-gray-400">Minimum</label>
+      <div class="flex items-center mt-2">
+        <input id="ember7" class="ember-view w-24 px-2 py-1 text-sm border rounded focus:outline-none" type="text" inputmode="numeric">
+
+        <div class="ml-2 text-gray-700">
+          -
+        </div>
+      </div>
+    </div>
+    <div class="ml-2">
+      <label class="text-xs text-gray-400">Maximum</label>
+      <div class="mt-2">
+        <input id="ember8" class="ember-view w-24 px-2 py-1 text-sm border rounded focus:outline-none" type="text" inputmode="numeric">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="mt-4">
+  <div class="text-white">Recent fund size (USD)</div>
+  <div class="flex flex-wrap mt-2">
+    <div>
+      <label class="text-xs text-gray-400">Minimum</label>
+      <div class="flex items-center mt-2">
+        <input id="ember9" class="ember-view w-24 px-2 py-1 text-sm border rounded focus:outline-none" type="text" inputmode="numeric">
+
+        <div class="ml-2 text-gray-700">
+          -
+        </div>
+      </div>
+    </div>
+    <div class="ml-2">
+      <label class="text-xs text-gray-400">Maximum</label>
+      <div class="mt-2">
+        <input id="ember10" class="ember-view w-24 px-2 py-1 text-sm border rounded focus:outline-none" type="text" inputmode="numeric">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <hr class="mt-5 -mx-4 border-gray-700">
+
+    <div class="mt-4">
+      <div class="text-gray-100">More options</div>
+      <div class="flex items-center mt-4">
+        <button class="flex flex-col w-8 h-4 bg-gray-400 border border-gray-300 rounded-full
+    cursor-pointer focus:outline-none " type="button">
+  <div class="w-4 h-4 -m-px bg-white border border-gray-300 rounded-full shadow "></div>
+</button>
+        <div class="ml-4 text-sm text-gray-400">Leads investment</div>
+      </div>
+      <div class="flex items-start mt-4">
+        <button class="flex flex-col w-8 h-4 bg-gray-400 border border-gray-300 rounded-full
+    cursor-pointer focus:outline-none " type="button">
+  <div class="w-4 h-4 -m-px bg-white border border-gray-300 rounded-full shadow "></div>
+</button>
+        <div class="flex flex-col ml-4">
+          <div class="text-sm leading-none text-gray-400">Visible verified</div>
+          <a target="_blank" rel="noopener noreferrer" href="/faq" id="ember11" class="ember-view mt-1 text-sm text-gray-500 underline">
+            What's this?
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+    </aside>
+    <main class="w-full py-3 px-6 md:block pt-20 ">
+      <div>
+        <div class="flex flex-wrap">
+<!----></div>
+            <div class="font-serif text-base text-gray-500">
+              Showing
+              10
+              of
+              14824
+              results
+            </div>
+
+          <div class="mt-2 grid grid-cols-1 gap-5">
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1337-ventures-2" id="ember12" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/https://1337.ventures/ " alt="1337 Ventures" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1337-ventures-2" id="ember13" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1337 Ventures
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="https://1337.ventures/ " class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              https://1337.ventures/ 
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/708bc6a7-18f8-4b87-9446-590d336f93bf" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          Kuala Lumpur, Kuala Lumpur, Malaysia
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Pre-Seed, 
+  </span>
+  <span>
+    Accelerator, 
+  </span>
+  <span>
+    Seed
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Check size:
+            </span>
+            <span class="text-gray-700">
+                $ 25K
+              -
+<!---->            </span>
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Consumer, 
+  </span>
+  <span>
+    Agnostic, 
+  </span>
+  <span>
+    Fintech, 
+  </span>
+  <span>
+    Insurtech, 
+  </span>
+  <span>
+     Healthtech
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    Asia-Pacific, 
+  </span>
+  <span>
+     South East Asia
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1517-fund" id="ember14" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/http://1517fund.com" alt="1517 Fund" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1517-fund" id="ember15" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1517 Fund
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://1517fund.com" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://1517fund.com
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/bc254a0f-0ec5-476c-8c67-eba229fb89c8" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          San Francisco, California, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Seed
+  </span>
+
+          </div>
+<!---->          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Software, 
+  </span>
+  <span>
+    SaaS, 
+  </span>
+  <span>
+    Health Care, 
+  </span>
+  <span>
+    Mobile, 
+  </span>
+  <span>
+    Applications, 
+  </span>
+  <span>
+    Enterprise, 
+  </span>
+  <span>
+    IT
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    United States
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1843-capital-2" id="ember16" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="https://d31s0k9giryrah.cloudfront.net/eyJidWNrZXQiOiJwcm9qZWN0LXZhbGVudGluZSIsImtleSI6ImludmVzdG9yLWxvZ29zLzU5MDJlN2JlLThiNzktNDRkNS04N2ViLTE1YjVhM2ZhZWUxYiIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwLCJoZWlnaHQiOjEwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MCwiZyI6MCwiYiI6MCwiYWxwaGEiOjB9fX19" alt="1843 Capital" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1843-capital-2" id="ember17" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1843 Capital
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="https://1843capital.com/" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              https://1843capital.com/
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/5902e7be-8b79-44d5-87eb-15b5a3faee1b" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          Greenwich, Connecticut, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Series A, 
+  </span>
+  <span>
+    Series B
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Check size:
+            </span>
+            <span class="text-gray-700">
+                $ 500K
+              -
+                $ 1M
+            </span>
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Underrepresented, 
+  </span>
+  <span>
+    AI, 
+  </span>
+  <span>
+    B2B, 
+  </span>
+  <span>
+    B2B2C, 
+  </span>
+  <span>
+    Blockchain, 
+  </span>
+  <span>
+    Consumer Goods, 
+  </span>
+  <span>
+    Crypto, 
+  </span>
+  <span>
+    Digital Health, 
+  </span>
+  <span>
+    Fintech, 
+  </span>
+  <span>
+    Impact, 
+  </span>
+  <span>
+    IoT, 
+  </span>
+  <span>
+    Lifestyle and Wellness, 
+  </span>
+  <span>
+    Platforms, 
+  </span>
+  <span>
+    Privacy and Security, 
+  </span>
+  <span>
+    Transportation
+  </span>
+
+          </div>
+<!---->      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1863-ventures" id="ember18" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/http://1863ventures.net" alt="1863 Ventures" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1863-ventures" id="ember19" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1863 Ventures
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://1863ventures.net" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://1863ventures.net
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/a8be28d8-f77d-446a-868b-d5622b5e9f40" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          Washington, District of Columbia, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Accelerator, 
+  </span>
+  <span>
+    Seed
+  </span>
+
+          </div>
+<!---->          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Agnostic, 
+  </span>
+  <span>
+    Underrepresented
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    United States, 
+  </span>
+  <span>
+    Southeast (US)
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1982-ventures" id="ember20" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/http://1982.vc" alt="1982 Ventures" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1982-ventures" id="ember21" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1982 Ventures
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://1982.vc" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://1982.vc
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/d3b61002-c253-4e64-8cc4-454c4c7ba0b9" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Pre-Seed
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Check size:
+            </span>
+            <span class="text-gray-700">
+                $ 100K
+              -
+                $ 500K
+            </span>
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Blockchain
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    Singapore
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1st-course-capital" id="ember22" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/http://www.1cc.vc/" alt="1st Course Capital" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1st-course-capital" id="ember23" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1st Course Capital
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://www.1cc.vc/" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://www.1cc.vc/
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/cdbc3704-c82d-4449-90f5-4e55f7e73eef" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          San Francisco
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Seed, 
+  </span>
+  <span>
+    Pre-Seed
+  </span>
+
+          </div>
+<!---->          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Impact, 
+  </span>
+  <span>
+    Food &amp; Beverage, 
+  </span>
+  <span>
+    Food Tech
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    United States
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/1up-ventures" id="ember24" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="https://d31s0k9giryrah.cloudfront.net/eyJidWNrZXQiOiJwcm9qZWN0LXZhbGVudGluZSIsImtleSI6ImludmVzdG9yLWxvZ29zL2RkYTMxMjI0LWRhM2ItNDg0Yy04NTRlLTk1YzY2NDExNmVhMyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MTAwLCJoZWlnaHQiOjEwMCwiZml0IjoiY29udGFpbiIsImJhY2tncm91bmQiOnsiciI6MCwiZyI6MCwiYiI6MCwiYWxwaGEiOjB9fX19" alt="1Up Ventures" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/1up-ventures" id="ember25" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                1Up Ventures
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://1upfund.com" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://1upfund.com
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/dda31224-da3b-484c-854e-95c664116ea3" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          Seattle, Washington, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Seed, 
+  </span>
+  <span>
+    Series A
+  </span>
+
+          </div>
+<!---->          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Gaming, 
+  </span>
+  <span>
+    Mobile, 
+  </span>
+  <span>
+    Digital Media
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    Pacific Northwest (US)
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/2020-ventures" id="ember26" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/http://2020.co" alt="2020 Ventures" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/2020-ventures" id="ember27" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                2020 Ventures
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://2020.co" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://2020.co
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/ab51b4fa-ce31-46ec-aa24-593bff194e4f" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          San Francisco, California, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Seed, 
+  </span>
+  <span>
+    Series A
+  </span>
+
+          </div>
+<!---->          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Software, 
+  </span>
+  <span>
+    Blockchain, 
+  </span>
+  <span>
+    Fintech, 
+  </span>
+  <span>
+    Consumer Electronics
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    United States, 
+  </span>
+  <span>
+    Southeast (Asia)
+  </span>
+
+          </div>
+      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/2048-ventures" id="ember28" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+<!---->
+    <img src="//logo.clearbit.com/http://2048.vc" alt="2048 Ventures" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/2048-ventures" id="ember29" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                2048 Ventures
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://2048.vc" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://2048.vc
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/6db744e8-7016-4b3f-86c5-35e6e080f8a6" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          New York, New York, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Pre-Seed
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Check size:
+            </span>
+            <span class="text-gray-700">
+                $ 300K
+              -
+                $ 600K
+            </span>
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Enterprise, 
+  </span>
+  <span>
+    Consumer Electronics, 
+  </span>
+  <span>
+    E-Commerce, 
+  </span>
+  <span>
+    VR/AR, 
+  </span>
+  <span>
+    Real Estate, 
+  </span>
+  <span>
+    Fintech, 
+  </span>
+  <span>
+    Agnostic, 
+  </span>
+  <span>
+    Digital Health, 
+  </span>
+  <span>
+    Sustainability, 
+  </span>
+  <span>
+    Climate, 
+  </span>
+  <span>
+    AI, 
+  </span>
+  <span>
+    API, 
+  </span>
+  <span>
+    Marketplaces, 
+  </span>
+  <span>
+    B2B, 
+  </span>
+  <span>
+    SaaS, 
+  </span>
+  <span>
+    Biotechnology
+  </span>
+
+          </div>
+<!---->      </div>
+    </div>
+    <div class="flex bg-white border border-gray-200">
+      <div class="py-5 pl-4">
+        <a href="/investors/22-fund" id="ember30" class="ember-view text-lg">
+          <div class="flex-shrink-0 w-20 h-20 overflow-hidden">
+    <div class="flex items-center justify-center w-full h-full bg-gray-300">
+      <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3/5 text-white"><path d="M10.254 6.912H8.197V11.4h2.057V6.912zm0 6.732H8.197v4.488h2.057v-4.488zm6.17-6.732h-2.057V11.4h2.057V6.912zm0 6.732h-2.057v4.488h2.057v-4.488zm-6.17 6.732H8.197v4.488h2.057v-4.488zm6.17 0h-2.057v4.488h2.057v-4.488z"></path><path d="M30.822 13.644c0-.595-.216-1.166-.602-1.587a1.974 1.974 0 00-1.455-.657h-6.17V2.424c0-.596-.218-1.166-.603-1.587A1.974 1.974 0 0020.537.18H4.081c-.546 0-1.069.236-1.455.657-.385.42-.602.991-.602 1.587v29.172h28.798V13.644zM4.081 2.424h16.456v26.928H4.081V2.424zm18.513 26.928V13.644h6.171v15.708h-6.17z"></path></svg>
+    </div>
+
+    <img src="//logo.clearbit.com/http://the22fund.com" alt="22 Fund" class="object-contain w-full h-full">
+</div>
+        </a>
+      </div>
+      <div class="flex-grow p-5 overflow-x-hidden">
+        <div class="flex flex-col lg:flex-row lg:justify-between">
+          <div class="flex flex-col">
+            <a href="/investors/22-fund" id="ember31" class="ember-view flex items-center">
+              <span class="font-serif text-xl text-black hover:underline">
+                22 Fund
+              </span>
+                <div class="tooltip">
+                  <span class="p-3 mt-1 text-xs text-white bg-blue-900 rounded tooltip-text lg:-mt-8">Verified investor</span>
+                  <span class="flex items-center p-1 ml-2 text-white bg-blue-800 rounded-full">
+                    <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-3 h-3"><path d="M28.852 6.85l-3.43-2.706a.61.61 0 00-.388-.15.599.599 0 00-.394.156L12.16 20.187s-4.906-4.718-5.044-4.856c-.137-.137-.319-.369-.594-.369s-.4.194-.543.338c-.107.112-1.857 1.95-2.72 2.862-.05.057-.08.088-.124.132a.616.616 0 00-.125.356.6.6 0 00.125.356l.175.163s8.706 8.362 8.85 8.506c.144.144.319.325.575.325.25 0 .456-.269.575-.388l15.569-20a.62.62 0 00.125-.362.643.643 0 00-.15-.4z"></path></svg>
+                  </span>
+                </div>
+            </a>
+            <a href="http://the22fund.com" class="mt-1 text-sm leading-tight text-orange-600 hover:underline" target="_blank" rel="noopener noreferrer">
+              http://the22fund.com
+            </a>
+          </div>
+          <div>
+            <a class="inline-block px-3 py-2 mt-2 text-sm text-gray-700 whitespace-no-wrap bg-transparent border border-gray-700 rounded lg:mt-0" href="https://app.visible.vc/connect-investor/18bc10c7-de53-4f00-bf37-1a7294fcc4d4" target="_blank" rel="noopener noreferrer">
+              Add to pipeline
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-2 text-sm text-gray-700">
+          Los Angeles, California, United States
+        </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Stage:
+            </span>
+              <span>
+    Growth
+  </span>
+
+          </div>
+<!---->          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Focus:
+            </span>
+              <span>
+    Manufacturing, 
+  </span>
+  <span>
+    Underrepresented
+  </span>
+
+          </div>
+          <div class="mt-1 text-sm text-gray-700">
+            <span class="text-gray-900">
+              Investment geography:
+            </span>
+              <span>
+    United States, 
+  </span>
+  <span>
+    Southern California (US)
+  </span>
+
+          </div>
+      </div>
+    </div>
+</div>
+
+            <div class="flex justify-center mt-4 mb-10">
+              <button class="px-3 py-2 text-sm text-white bg-gray-600 rounded" type="button">
+                Load more results
+              </button>
+            </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<footer class="flex flex-col w-full px-6 py-2 text-xs text-gray-500 bg-black md:flex-row md:items-center md:justify-between md:sticky md:bottom-0">
+  <div class="flex flex-col md:block">
+    <a href="https://visible.vc/privacy/" target="_blank" rel="noopener noreferrer">
+      Privacy
+    </a>
+    <a href="https://visible.vc/terms/" target="_blank" rel="noopener noreferrer" class="md:ml-6">
+      Terms and conditions
+    </a>
+    <a target="_blank" rel="noopener noreferrer" href="/faq" id="ember5" class="ember-view md:ml-6">
+      FAQ
+    </a>
+  </div>
+  <div class="flex flex-col md:block">
+    <a href="https://visible.vc/" target="_blank" rel="noopener noreferrer">
+      Visible VC©
+      2022
+    </a>
+    <span class="md:ml-6">
+      Logos provided by
+      <a href="https://clearbit.com" target="_blank" rel="noopener noreferrer">
+        Clearbit
+      </a>
+    </span>
+  </div>
+</footer>
+</div>
+
+<div id="ember6" class="ember-view">
+</div></body></html>

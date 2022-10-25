@@ -1,0 +1,49 @@
+На ютубе доступны видео по прокси, фоновой работе браузера, кукис, аутентификация на сайте 
+переключение между вкладкамиe. Так же доступна инфа по имитации кликов и нажатии клавиш.                                                                                   
+
+ 
+1 Импорт модулей
+
+    from selenium import webdriver
+    import time
+    from fake_useragent import UserAgent (pip install fake_useragent)
+
+2  Создание переменной драйвер
+
+    driver = webdriver.Chrome(путь до драйвера, options=options)
+
+2.1 Создание объекта опции для добавления опций
+
+    options = webdriver.ChromeOptions()
+    options.add_argument("user-agent={UserAgent.(ie, opera, rangom etc...}")
+    options.set_preference("general.useragent.override", "Mozilla/5.0 (X11; Linux ......")
+
+
+2.2 Отключение режима вебдрайвера сайт www.intoli.com... список опции в закладках
+
+    options.add_argument("--disable-blink-features=AutomationControlled")
+
+3 Создание конструкции try, except, finally, чтобы при возникновении ошибки браузер(драйвер) закрылся. 
+  Всегда использовать слип для имитации реального пользователя, либо иплисити вей
+
+                    Инструменты поиска и манипуляций:
+                    login_button = driver.find_element_by_id("index_login_button").click()
+                    time.sleep(10)
+
+    try:
+         driver.
+        driver.get(url=url)
+          time.sleep(5)
+    except Exception as ex:
+        print(ex)
+
+    finally:
+         driver.close()
+        driver. quit()
+
+4 Вытаскивание из драйве.гет информации в html файл
+
+    with open("index_selenium.html", "w") as file:
+            file.write(driver.page_source)
+
+5 Дальше читаем файл и делаем из него суп этой странички и пользуемся инструментами супа... и все.

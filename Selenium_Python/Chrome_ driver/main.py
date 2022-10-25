@@ -6,7 +6,7 @@ url = "https://www.vk.ru/"
 driver = webdriver.Chrome(executable_path='/home/roman/python_course/Selenium_Python/Chrome_ driver/chromedriver')
 
 try:
-
+    driver.
     driver.get(url=url)
     time.sleep(5)
 except Exception as ex:
