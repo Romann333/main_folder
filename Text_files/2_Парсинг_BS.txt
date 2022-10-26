@@ -11,6 +11,10 @@
     2.1 "Accept": , "User-Agent":
        
 3 Запрос методом requests.get() страницы с ссылками
+
+    Вариант записи: s = requests.Session()
+                    s = s.get(url, headers)
+
     req = requests.get(url, headers=headers)
 
 4 Проветиь, что ты получили в этом запросе и извлечем текст
