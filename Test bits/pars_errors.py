@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import time
-
+requests.packages.urllib3.disable_warnings()     #Отключение предупреждений в командной строке.
 
 def test_request(url, retry=5):
     headers = {
