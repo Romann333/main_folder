@@ -1,0 +1,26 @@
+ssh name@111.11.111.11   (пароль) # Подключение к серверу через командную строку
+mkdir                             # Создаем директорию на сервере под именем БОТА\Проекта
+apt install sudo                  # Установка sudo                 
+sudo apt update                   # Обновление пакетов
+sudo apt upgrade -y               # ???
+sudo apt install python3-venv     # Установка виртуального окружения
+python3 -m venv venv              # Создание папки для файлов окружения
+source venv/bin/activate          # Активация виртуальной среды
+which python                      # Проверка что включено нужно окружение
+deactivate                        # Выйти из вертуального окружения
+
+sudo apt install -y libxss1 libappindicator1 libindicator7       # Установка необходимых для корректной работы google-chroma пакетов:
+sudo wget https://dl.google.com/linux/direct/go...               # Скачать google-chrome:
+sudo dpkg -i google-chrome*.deb                                  # Установка google-chrome
+sudo apt install -y -f                                           # Фиксим/подтягиваем зависимости:
+google-chrome --version                                          # Проверить версию:
+sudo apt install screen                                          # Установка screen:
+screen                                                           # Создаст новый screen
+CRTL + A, после чего нажмаем D                                   # Свернуть screen
+screen -ls                                                       # Что-бы посмотреть список запущенных screen: 
+screen -r                                                        # Что-бы вернуться к свёрнутому screen
+screen --version                                                 # Версия
+exit                                                             # Что-бы завершить сессию/закрыть screen
+
+
+Перемещаемся в рабочую директорию, создаем screen, активируем виртуальную среду и запускаем наш основной файл

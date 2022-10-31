@@ -10,7 +10,9 @@ from openpyxl import load_workbook, Workbook
 import random
 import  os
 import sqlite3
-
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support.expected_conditions import visibility_of_element_located
+from datetime import datetime
 
 NO_INFO_STATUS = 'No information'
 
@@ -25,7 +27,7 @@ def get_all_links():
     }
 
 
-    for page in range(0, 100, 10): 
+    for page in range(0, 10, 10): 
         fund_links = {}   
         gfs = requests.get(f'https://project-valentine-api.herokuapp.com/investors?page%5Blimit%5D=10&page%5Boffset%5D={page}',
         headers=headers
@@ -108,14 +110,15 @@ def get_data_from_pages():
     options.add_argument("user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.headless = True
-
+    
     try:
         driver = webdriver.Chrome(
             executable_path=PATH_TO_WEBDRIVER,
             options=options
          )
+ 
         count = 1                               #Счетчик инвесторов
-        for page in range(0, 100, 10): 
+        for page in range(0, 10, 10): 
 
             with open(f"{DATA_FOLDER}data/all_links - {page}.json") as file:
                 all_links = json.load(file) 
@@ -123,12 +126,16 @@ def get_data_from_pages():
             for name_fund in all_links: 
 
                 try:
+                   
                     driver.get(url=all_links[name_fund])
-
-                    time.sleep(5)
+                    time.sleep(2)
+                    wait = WebDriverWait(driver, 20).until(lambda x: x.find_element(By.ID, "ember7")) 
+                    # wait = WebDriverWait(driver, 20)
+                    # wait.until(visibility_of_element_located((By.ID, "ember36"))) 
+                  
 
                     soup = BeautifulSoup(driver.page_source, 'lxml')
-
+                   
                     print(f'{count}  {all_links[name_fund]} ... Готов!')
 
                     m_n =[]
@@ -237,10 +244,11 @@ def get_data_from_pages():
         con.close()    
 
 def main():
+    start = datetime.now()
     # get_all_links()
     create_result_headers()
     get_data_from_pages()
-
+    print(f' Время выполнения ... {datetime.now() - start}')
 
 if __name__ == '__main__':
     main()

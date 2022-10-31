@@ -1,0 +1,12 @@
+sudo apt install python3-venv     # Установка виртуального окружения
+python3 -m venv venv              # Создание папки для файлов окружения
+source venv/bin/activate          # Активация виртуальной среды
+which python                      # Проверка что включено нужно окружение
+deactivate                        # Выйти из вертуального окружения
+pip -V                            # Просмотр версии pip
+pip install -U pip                # Обновление версиии pip
+pip freeze > requiremens.txt      # Сохраниние в файл всех зависимостей окружения
+cat                               # Вывод содержимого файла на экран
+pip list                          # Список установленных зависимостей в venv 
+pip install -Ur requiremens.txt   # Установка ранее прописанных или сохраненных зависимостей.
+pip uninstall telebot             # Удаление чего либа из виртуальной среды
