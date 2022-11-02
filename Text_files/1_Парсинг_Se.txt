@@ -47,3 +47,7 @@
             file.write(driver.page_source)
 
 5 Дальше читаем файл и делаем из него суп этой странички и пользуемся инструментами супа... и все.
+
+
+# wait = WebDriverWait(driver, 20)
+# wait.until(visibility_of_element_located((By.ID, "ember36")))  Ожидание загрузки допварианты
